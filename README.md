@@ -1,3 +1,3 @@
 # Elmas Tonto
 
-Let find out who is the dumbest.
+Averigüemos quen es el mas tonto.
