@@ -1,6 +1,6 @@
-import random
+from tonto import encontrar_tonto
 
-tontos = ["Miki", "Franca", "Pablito", "Germy"]
+tontos = ["Miki", "Franca", "Pablito", "Germy", "Cristy"]
 
 while True:
     print("Opcion 1 - Añadir nombres")
@@ -26,7 +26,7 @@ while True:
         print(tontos) 
 
     elif opcion == 3 :
-        elmas = random.choice(tontos) #usamos el metodo choice() del modulo random, para que devuelva un resultado al azar dentro de la lista
+        elmas = encontrar_tonto(tontos) #usamos el metodo choice() del modulo random, para que devuelva un resultado al azar dentro de la lista
         print(f"{elmas} es el mas tonto") #la "f" da formato y permite poner variables como parte de un texto
         break
 
