@@ -26,7 +26,7 @@ while True:
         print(tontos) 
 
     elif opcion == 3 :
-        elmas = encontrar_tonto(tontos) #usamos el metodo choice() del modulo random, para que devuelva un resultado al azar dentro de la lista
+        elmas = encontrar_tonto(tontos) 
         print(f"{elmas} es el mas tonto") #la "f" da formato y permite poner variables como parte de un texto
         break
 
