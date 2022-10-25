@@ -26,6 +26,3 @@ def enviar_correo(destinatarios, el_tonto):
     server.send_message(message)
 
     server.quit()
-
-
-enviar_correo(["elmastontocow@gmail.com"], "pablo")
