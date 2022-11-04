@@ -1,0 +1,19 @@
+name: enviar correo automatico del mas tonto :p
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 15 * * *'
+
+jobs:
+  enviar_correo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.10
+    - name: enviar correo
+      run: python el_mas_tonto.py
