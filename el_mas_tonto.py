@@ -7,7 +7,7 @@ from leer_archivo import leer_archivo
 from tonto import encontrar_tonto
 
 
-usuarios = leer_archivo("usuarios_prueba.csv")
+usuarios = leer_archivo("usuarios.csv")
 correos = [usuario[1] for usuario in usuarios]
 print(correos)
 tonto = encontrar_tonto(usuarios)
