@@ -1,7 +1,6 @@
 name: enviar correo automatico del mas tonto :p
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 15 * * *'
 
