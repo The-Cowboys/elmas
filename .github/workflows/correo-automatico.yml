@@ -2,7 +2,7 @@ name: enviar correo automatico del mas tonto :p
 
 on:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 10 * * *'
 
 jobs:
   enviar_correo:
