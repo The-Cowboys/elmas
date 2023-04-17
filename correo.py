@@ -5,7 +5,7 @@ from email.message import EmailMessage
 email_smtp = "smtp.office365.com"  
 
 emisor = "elmastontocow@hotmail.com"
-email_password = "elmastonto123"
+email_password = "MasMasTonto123"
 
 def enviar_correo(destinatarios, el_tonto):
      
