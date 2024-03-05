@@ -15,20 +15,20 @@ def enviar_correo(destinatarios, el_tonto):
     print("emisor: ", emisor)
     print("password: ", email_password)
 
-    # server = smtplib.SMTP(email_smtp, 587) 
-    # server.ehlo() 
-    # server.starttls()
-    # server.login(emisor, email_password)
+    server = smtplib.SMTP(email_smtp, 587) 
+    server.ehlo() 
+    server.starttls()
+    server.login(emisor, email_password)
 
-    # # Crear un objeto de email 
-    # message = EmailMessage()
+    # Crear un objeto de email 
+    message = EmailMessage()
 
-    # # Configurar el email 
-    # message['Subject'] = "El mas tonto del dia es..."
-    # message['From'] = emisor
-    # message['To'] = destinatarios
-    # message.set_content(f"Felicidades, {el_tonto} es el mas tonto :D")
+    # Configurar el email 
+    message['Subject'] = "Hola perrassssssss!"
+    message['From'] = emisor
+    message['To'] = destinatarios
+    message.set_content(f"Esta es una prueba")
 
-    # server.send_message(message)
+    server.send_message(message)
 
-    # server.quit()
+    server.quit()
