@@ -17,4 +17,4 @@ jobs:
         python-version: "3.10"
         architecture: "x64"
     - name: enviar correo
-      run: python el_mas_tonto.py
+      run: python el_mas_tonto.py ${{ secrets.LOGIN_EMAIL }} ${{ secrets.LOGIN_PASS }}
