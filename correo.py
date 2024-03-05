@@ -1,3 +1,4 @@
+import sys
 import smtplib 
 from email.message import EmailMessage
 
@@ -8,21 +9,29 @@ emisor = "elmastontocow@hotmail.com"
 email_password = "MasMasTonto123"
 
 def enviar_correo(destinatarios, el_tonto):
+
+    print("Enviando correo...")
+    
+    print("Tonto: ", el_tonto)
+    
+    print("Destinatarios: ", destinatarios)
      
-    server = smtplib.SMTP(email_smtp, 587) 
-    server.ehlo() 
-    server.starttls()
-    server.login(emisor, email_password)
+    print("Args: ", sys.argv)
 
-    # Crear un objeto de email 
-    message = EmailMessage()
+    # server = smtplib.SMTP(email_smtp, 587) 
+    # server.ehlo() 
+    # server.starttls()
+    # server.login(emisor, email_password)
 
-    # Configurar el email 
-    message['Subject'] = "El mas tonto del dia es..."
-    message['From'] = emisor
-    message['To'] = destinatarios
-    message.set_content(f"Felicidades, {el_tonto} es el mas tonto :D")
+    # # Crear un objeto de email 
+    # message = EmailMessage()
 
-    server.send_message(message)
+    # # Configurar el email 
+    # message['Subject'] = "El mas tonto del dia es..."
+    # message['From'] = emisor
+    # message['To'] = destinatarios
+    # message.set_content(f"Felicidades, {el_tonto} es el mas tonto :D")
 
-    server.quit()
+    # server.send_message(message)
+
+    # server.quit()
