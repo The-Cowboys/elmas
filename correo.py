@@ -22,7 +22,7 @@ def enviar_correo(destinatarios, el_tonto):
     message['From'] = emisor
     message['To'] = destinatarios
     message.set_content(f"Felicidades, {el_tonto} es el mas tonto :D")
-    
+
     server.send_message(message)
 
     server.quit()
