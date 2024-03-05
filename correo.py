@@ -9,12 +9,6 @@ emisor = sys.argv[1]
 email_password = sys.argv[2]
 
 def enviar_correo(destinatarios, el_tonto):
-
-    print("Enviando correo...")
-        
-    print("emisor: ", emisor)
-    print("password: ", email_password)
-
     server = smtplib.SMTP(email_smtp, 587) 
     server.ehlo() 
     server.starttls()
@@ -24,11 +18,11 @@ def enviar_correo(destinatarios, el_tonto):
     message = EmailMessage()
 
     # Configurar el email 
-    message['Subject'] = "Hola perrassssssss!"
+    message['Subject'] = "El mas tonto del dia es..."
     message['From'] = emisor
     message['To'] = destinatarios
-    message.set_content(f"Esta es una prueba")
-
+    message.set_content(f"Felicidades, {el_tonto} es el mas tonto :D")
+    
     server.send_message(message)
 
     server.quit()
