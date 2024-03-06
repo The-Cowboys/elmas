@@ -1,14 +1,14 @@
+import sys
 import smtplib 
 from email.message import EmailMessage
 
 # Configuración del servidor de correos
 email_smtp = "smtp.office365.com"  
 
-emisor = "elmastontocow@hotmail.com"
-email_password = "MasMasTonto123"
+emisor = sys.argv[1]
+email_password = sys.argv[2]
 
 def enviar_correo(destinatarios, el_tonto):
-     
     server = smtplib.SMTP(email_smtp, 587) 
     server.ehlo() 
     server.starttls()
