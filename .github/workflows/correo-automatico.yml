@@ -3,7 +3,7 @@ name: enviar correo automatico del mas tonto :p
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 9 * * *'
 
 jobs:
   enviar_correo:
@@ -20,4 +20,4 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
     - name: enviar correo
-      run: python el_mas_tonto.py ${{ secrets.LOGIN_EMAIL }} ${{ secrets.LOGIN_PASS }}
+      run: python el_mas_tonto.py ${{ secrets.LOGIN_EMAIL }} ${{ secrets.LOGIN_PASS }} ${{ secrets.EL_TONTO_TOKEN }}
