@@ -21,4 +21,4 @@ def enviar_tonto_api(tonto):
     print(f"Response: {x.status_code}")
     print(f"Response: {x.text}")
 
-
+    x.raise_for_status()
