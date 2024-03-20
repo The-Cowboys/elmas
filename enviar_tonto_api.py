@@ -1,7 +1,7 @@
 import requests
 import sys
 
-token = sys.argv[2]
+token = sys.argv[3]
 
 url = 'https://thecowboys.duckdns.org/api/tontos'
 
